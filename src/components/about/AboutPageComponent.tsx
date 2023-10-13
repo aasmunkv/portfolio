@@ -36,7 +36,7 @@ export default function AboutPageComponent() {
                         in Oslo, Norway.
                     </p>
                     <p>
-                        I have a master's degree in computation science, with high focus on applied mathematics, from the
+                        I have a masters degree in computation science, with high focus on applied mathematics, from the
                         University of Oslo. The thesis I wrote was about how to approximation solutions to a specific class
                         of partial differential equations by using machine learning models as a tool.
                     </p>
