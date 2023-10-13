@@ -1,11 +1,9 @@
-import NavigationButtons from "@/components/layout/Navigation";
-
 export default function Footer() {
     return (
         <footer>
             <div className="flex h-full justify-center items-center p-4">
                 <div className="text-center">
-                    <p className="text-sm text-slate-200">
+                    <p className="text-sm text-slate-400">
                         Developer portfolio by Åsmund Danielsen Kvitvang
                     </p>
                 </div>

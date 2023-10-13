@@ -3,7 +3,7 @@ import fs from "fs";
 import matter from "gray-matter";
 
 const getPostMetadata = (): PostMetadata[] => {
-    const folder = "blog-posts/"
+    const folder = "posts/blog/"
     const files = fs.readdirSync(folder);
     const mdPosts = files.filter((file) => file.endsWith(".md"));
 

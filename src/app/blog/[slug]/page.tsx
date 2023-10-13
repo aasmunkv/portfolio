@@ -1,6 +1,3 @@
-// import ComingSoon from "@/components/coming-soon";
-// import NavigationButtons from "@/components/navigation";
-// import HomeNavigation from "@/components/home-navigation";
 import fs from "fs";
 import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
@@ -8,11 +5,10 @@ import getPostMetadata from "@/components/blog/getPostMetadata";
 import BackToBlog from "@/components/blog/BackToBlog";
 
 const getPostContent = (slug: string) => {
-    const folder = "blog-posts/";
+    const folder = "posts/blog/";
     const file = `${folder}${slug}.md`;
     const content = fs.readFileSync(file, "utf8");
-    const matterResult = matter(content);
-    return matterResult;
+    return matter(content);
 }
 
 /**
@@ -36,19 +32,16 @@ export default function AboutPage(props: any) {
     const post = getPostContent(slug);
     return (
         <main>
-            {/*<div className="flex items-center flex-col m-4">*/}
             <div className="max-w-2xl w-full">
                 <div className="flex items-start my-4">
                     <BackToBlog/>
                 </div>
-                {/*<div className="mt-36 flex items-center flex flex-col min-h-screen">*/}
-                {/*<div className="flex items-center min-h-screen">*/}
                 <div className="flex justify-center min-h-screen">
                     {/*<div className="flex items-center justify-center min-h-screen">*/}
                     <article className="prose lg:prose-xl">
-                        <h1>{post.data.title}</h1>
+                        <h2>{post.data.title}</h2>
                         <h4>{post.data.subtitle}</h4>
-                        <h6 className="text-sm text-slate-600">{post.data.author}</h6>
+                        <h6 className="text-sm text-slate-700">{post.data.author}</h6>
                         <h6 className="text-sm text-slate-400">{post.data.date}</h6>
                         <Markdown>{post.content}</Markdown>
                     </article>
@@ -58,20 +51,5 @@ export default function AboutPage(props: any) {
                 </div>
             </div>
         </main>
-        // <main className="flex min-h-screen flex-col items-center justify-between p-6">
-        // {/*<main className="flex flex-col items-center justify-between p-2 lg:p-6">*/}
-        //     <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        //         <HomeNavigation path="/blog/slug" />
-        //         <NavigationButtons path={"/blog/slug"} />
-        //     </div>
-        //     <div className="mt-36 flex items-center flex flex-col min-h-screen">
-        //         <article className="prose lg:prose-xl">
-        //             <h1>{post.data.title}</h1>
-        //             <h6 className="text-sm text-slate-400">{post.data.date}</h6>
-        //             <h6 className="text-sm text-slate-800">{post.data.author}</h6>
-        //             <Markdown>{post.content}</Markdown>
-        //         </article>
-        //     </div>
-        // </main>
     );
 }

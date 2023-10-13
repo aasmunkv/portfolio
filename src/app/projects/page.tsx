@@ -1,19 +1,21 @@
-import ComingSoon from "@/components/ComingSoon";
-// import NavigationButtons from "@/components/navigation";
-// import HomeNavigation from "@/components/home-navigation";
-// import MainPage from "@/components/MainPage";
+import ProjectPageComponent from "@/components/projects/ProjectPageComponent";
+import React from "react";
+import getProjectData from "@/components/projects/getProjectData";
 
 export default function ProjectPage() {
+    const projectData = getProjectData();
+    const projectPreviews = projectData.map((project) => (
+        <ProjectPageComponent key={project.timespan} {...project} />
+    ));
     return (
-        <main>
-            <ComingSoon text="Project page"/>
+        <main className="relative min-h-screen flex flex-col overflow-hidden">
+            <div className="w-full max-w-6xl mx-auto px-4 md:px-6">
+                <div className="flex flex-col justify-center divide-y divide-slate-200">
+                    <div className="w-full max-w-3xl mx-auto">
+                        {projectPreviews}
+                    </div>
+                </div>
+            </div>
         </main>
-        // <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        //     <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        //         <HomeNavigation path="" />
-        //         <NavigationButtons path={"/projects"} />
-        //     </div>
-        //     <ComingSoon text="Project page"/>
-        // </main>
     );
 }

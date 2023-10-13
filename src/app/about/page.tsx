@@ -1,18 +1,14 @@
-import ComingSoon from "@/components/ComingSoon";
-// import NavigationButtons from "@/components/navigation";
-// import HomeNavigation from "@/components/home-navigation";
+import AboutPageComponent from "@/components/about/AboutPageComponent";
 
 export default function AboutPage() {
     return (
-        <main>
-            <ComingSoon text="About page"/>
+        <main className="max-w-2xl min-h-screen">
+            {/*<div className="flex flex-col gap-24 mt-16 items-center min-h-screen">*/}
+            <div className="flex flex-col items-center">
+                <div className="grid grid-cols-1 gap-4">
+                    <AboutPageComponent/>
+                </div>
+            </div>
         </main>
-        // <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        //     <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        //         <HomeNavigation path="" />
-        //         <NavigationButtons path={"/about"} />
-        //     </div>
-        //     <ComingSoon text="About page"/>
-        // </main>
     );
 }
