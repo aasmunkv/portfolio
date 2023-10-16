@@ -19,8 +19,10 @@ export default function AboutPageComponent() {
                 </div>
                 <div className="mt-4 text-center">
                     <h2 className="text-lg font-semibold">Åsmund Danielsen Kvitvang</h2>
-                    <p className="text-md text-gray-600">Backend developer</p>
-                    <p className="text-md text-gray-600">aakvitvang@gmail.com</p>
+                    <div className="text-md text-gray-600 dark:text-white dark:text-slate-400">
+                        <p>Backend developer</p>
+                        <p>aakvitvang@gmail.com</p>
+                    </div>
                 </div>
             </div>
             <div className="items-left text-lg">

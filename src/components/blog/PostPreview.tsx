@@ -13,8 +13,8 @@ export default function PostPreview(props: PostMetadata) {
                     </div>
                     <div className="md:flex-1">
                         <p className="font-bold hover:underline">{props.title}</p>
-                        <p className="text-sm text-slate-400">{props.date} | {props.author}</p>
-                        <p className="text-slate-700">{props.subtitle}</p>
+                        <p className="text-sm text-slate-400 dark:text-white dark:text-slate-500">{props.date} | {props.author}</p>
+                        <p className="text-slate-700 dark:text-white dark:text-slate-200">{props.subtitle}</p>
                     </div>
                 </div>
             </div>

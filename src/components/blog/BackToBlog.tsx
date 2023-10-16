@@ -2,7 +2,7 @@ import React from "react";
 
 export default function BackToBlog() {
     return (
-        <a href="/blog" className="flex items-center text-gray-600 hover:text-gray-800">
+        <a href="/blog" className="flex items-center text-gray-600 hover:text-gray-800 dark:text-white dark:text-slate-400">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5 mr-2"

@@ -38,11 +38,11 @@ export default function AboutPage(props: any) {
                 </div>
                 <div className="flex justify-center min-h-screen">
                     {/*<div className="flex items-center justify-center min-h-screen">*/}
-                    <article className="prose lg:prose-xl">
-                        <h2>{post.data.title}</h2>
-                        <h4>{post.data.subtitle}</h4>
-                        <h6 className="text-sm text-slate-700">{post.data.author}</h6>
-                        <h6 className="text-sm text-slate-400">{post.data.date}</h6>
+                    <article className="prose lg:prose-xl dark:text-white dark:text-slate-200">
+                        <h2 className="dark:text-white dark:text-slate-200">{post.data.title}</h2>
+                        <h4 className="dark:text-white dark:text-slate-300">{post.data.subtitle}</h4>
+                        <h6 className="text-sm text-slate-700 dark:text-white dark:text-slate-400">{post.data.author}</h6>
+                        <h6 className="text-sm text-slate-400 dark:text-white dark:text-slate-400">{post.data.date}</h6>
                         <Markdown>{post.content}</Markdown>
                     </article>
                 </div>
