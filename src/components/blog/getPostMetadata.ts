@@ -19,8 +19,15 @@ const getPostMetadata = (): PostMetadata[] => {
             slug: filename.replace(".md", ""),
         }
     });
-    posts.sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
-    return posts;
+
+    const currentDate = new Date();
+    const filteredPosts = posts.filter((post) => {
+        const postDate = new Date(post.date);
+        return postDate <= currentDate;
+    });
+
+    filteredPosts.sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
+    return filteredPosts;
 
 
     // const slugs = mdPosts.map((file) => file.replace(".md", ""));
