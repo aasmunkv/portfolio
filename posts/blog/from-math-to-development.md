@@ -5,10 +5,10 @@ are, and not whether this is useful information for other fields of study. How t
 software developer?"
 date: "2023-10-13"
 author: "Åsmund Danielsen Kvitvang"
-image: "from-math-to-development/math-and-programming.png"
+image: "from-math-to-development/math-and-programming.jpg"
 ---
 
-![Math and programming](/blog-images/from-math-to-development/math-and-programming2.png)
+![Math and programming](/blog-images/from-math-to-development/math-and-programming.jpg)
 
 My background as a developer began years ago when I decided to become a student at the institute for mathematics at the
 University of Oslo. I completed my first course in programming first semester, where I learned Python. I enjoyed

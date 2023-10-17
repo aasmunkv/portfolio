@@ -4,7 +4,7 @@ subtitle: "Why is it that so many developers delay or neglect to write documenta
 extremely important for future maintenance?"
 date: "9999-12-31"
 author: "Åsmund Danielsen Kvitvang"
-image: "writing-documentation/writing.jpg"
+image: "writing-documentation/writing2.jpg"
 ---
 
 ![Documentation writing](/blog-images/writing-documentation/writing.jpg)
