@@ -1,4 +1,5 @@
 import MainPage from '@/components/MainPage'
+import Head from "next/head";
 // import Header from '@/components/header'
 // import NavigationButtons from "@/components/navigation";
 // import { useRouter } from 'next/router';
@@ -7,6 +8,16 @@ export default function Home() {
     // const {pathname} = useRouter();
     return (
         <main>
+            <Head>
+                <title>
+                    Developer portfolio by Åsmund Danielsen Kvitvang
+                </title>
+                <meta
+                    name="description"
+                    content="Developer portfolio by Åsmund Danielsen Kvitvang showing his blog, projects and background."
+                    key="desc"
+                />
+            </Head>
             <MainPage/>
         </main>
         // <main className="flex min-h-screen flex-col items-center justify-between p-24">
