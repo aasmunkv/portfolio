@@ -1,27 +1,15 @@
-# TODO:
-- Fix a common header for all pages, which have "Home" on left and "About", "Blog" and "Projects" on right side.
-- Make a common footer on all pages containing some basic info such as "Developer portfolio by Åsmund D. Kvitvang".
-- Remove the functionality which moves right header content to bottom for small screens.
-- Fix so that header and footer content is written in "layout.tsx" to apply for all pages.
+# Developer portfolio
 
+This is a [Next.js](https://nextjs.org/) project for a developer portfolio page. It is meant for publishing developer 
+information, blog posts and information about completed and undergoing projects.
 
----
+## Adding blog posts and projects
+See `posts/README.md` for information about how to properly add blog posts and new projects.
 
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
+## Developing and testing new features
+To run the development server during testing, run following command.
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -30,17 +18,7 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## DeployED on Vercel
+The application has been deployed via Vercel, and connected to private domain bought at [Domene AS](https://domene.no).
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Deployed website may be found [here](https://www.aasmundkvitvang.no).
