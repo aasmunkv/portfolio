@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function AboutPageComponent() {
     return (
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col">
             <div className="flex flex-col text-center items-center mb-4">
                 <div className="relative flex items-center justify-center w-48 h-48 rounded-full border-2 border-green-500 p-0.5">
                     <div className="relative w-full h-full rounded-full overflow-hidden">

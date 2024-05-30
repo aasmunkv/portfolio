@@ -37,13 +37,12 @@ export default function AboutPage(props: any) {
                     <BackToBlog/>
                 </div>
                 <div className="flex justify-center min-h-screen">
-                    {/*<div className="flex items-center justify-center min-h-screen">*/}
-                    <article className="prose lg:prose-xl dark:text-white dark:text-slate-200">
-                        <h2 className="dark:text-white dark:text-slate-200">{post.data.title}</h2>
-                        <h4 className="dark:text-white dark:text-slate-300">{post.data.subtitle}</h4>
-                        <h6 className="text-sm text-slate-700 dark:text-white dark:text-slate-400">{post.data.author}</h6>
-                        <h6 className="text-sm text-slate-400 dark:text-white dark:text-slate-400">{post.data.date}</h6>
-                        <Markdown>{post.content}</Markdown>
+                    <article className="prose lg:prose-xl">
+                        <h2 className="dark:text-gray-200">{post.data.title}</h2>
+                        <h4 className="dark:text-gray-300">{post.data.subtitle}</h4>
+                        <h6 className="text-sm dark:text-gray-400">{post.data.author}</h6>
+                        <h6 className="text-sm dark:text-gray-400">{post.data.date}</h6>
+                        <Markdown className="dark:text-gray-300">{post.content}</Markdown>
                     </article>
                 </div>
                 <div className="flex items-start my-4">

@@ -1,7 +1,7 @@
 ---
 employer: "Noah AS"
 division: ""
-timespan: "Jun 2023 -"
+timespan: "Jun 2023 Jan 2024"
 title: "Integration and automation of PDF signing"
 role: "Software developer"
 description: "Further develop and complete a Java application to fetch and digitally sign PDF-documents stored in a 

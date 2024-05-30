@@ -4,7 +4,9 @@ export default function Home() {
     // const {pathname} = useRouter();
     return (
         <main>
-            <MainPage/>
+            <div>
+                <MainPage/>
+            </div>
         </main>
         // <main className="flex min-h-screen flex-col items-center justify-between p-24">
         //

@@ -8,7 +8,7 @@ export default function ProjectPage() {
         <ProjectPageComponent key={project.timespan} {...project} />
     ));
     return (
-        <main className="relative min-h-screen flex flex-col overflow-hidden">
+        <main className="relative flex flex-col overflow-hidden">
             <div className="w-full max-w-6xl mx-auto px-4 md:px-6">
                 <div className="flex flex-col justify-center divide-y divide-slate-200">
                     <div className="w-full max-w-3xl mx-auto">

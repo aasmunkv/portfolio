@@ -28,7 +28,7 @@ I usually add a docstring to the method with a two-sentence remark explaining th
 After this has been added I keep on developing other parts of my application. I mainly do this for my own sake, as I 
 probably will have to read the code in the near or distant future and I really appreciate that my younger self thought 
 of me during the development process. Whenever the entire application is finished I turn to my documentation (often 
-being a `README.md` file) and try to
+being a *README.md* file) and try to
 write a concise and structure summary of the entire project, where I am able to turn to my docstrings for guidance.
 
 Another useful aspect of writing documentation during (and not after) development is that it may be extremely valuable
@@ -40,7 +40,7 @@ easy to write a documentation on the correct level of knowledge.
 
 Moreover, my development process consists of another piece of helpful documentation which I frequently use from start 
 to finish, namely a todo list containing a descriptive explanation of what I need to do to bring home the entire project 
-at hand. I try to keep it as efficient as possible, so this is usually written inside a `README.md` file at the root 
+at hand. I try to keep it as efficient as possible, so this is usually written inside a *README.md* file at the root 
 folder of my project and consists of two lists, namely *TODOs* and *DONEs*. Whenever I have fresh thoughts on what the 
 application needs for it to be completed I add a new entry in the todo list, and when a todo is done I move it into the 
 done section. This helps me to perform a structured workflow, as well as not forgetting important parts of the project 

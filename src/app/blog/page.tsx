@@ -16,7 +16,7 @@ export default function BlogPage() {
         <PostPreview key={post.slug} {...post} />
     ));
     return (
-        <main className="max-w-2xl min-h-screen">
+        <main className="max-w-2xl">
             {/*<div className="flex flex-col gap-24 mt-16 items-center min-h-screen">*/}
             <div className="flex flex-col items-center">
                 <ul className="grid grid-cols-1 gap-4">

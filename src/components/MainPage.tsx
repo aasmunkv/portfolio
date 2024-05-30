@@ -13,18 +13,16 @@ import React from "react";
  */
 export default function MainPage() {
     return (
-        <div className="text-center items-center flex flex-col min-h-screen">
+        <div className="text-center items-center flex flex-col">
             <div className="relative flex items-center justify-center w-48 h-48 rounded-full border-2 border-green-500 p-0.5">
-                <div className="relative w-full h-full rounded-full overflow-hidden">
-                    <Image
-                        className="object-cover w-full h-full rounded-full"
-                        src="/aktiv-kvadrat.jpg"
-                        alt="Profile photo"
-                        width={180}
-                        height={180}
-                        priority
-                    />
-                </div>
+                <Image
+                    className="object-cover w-full h-full rounded-full"
+                    src="/aktiv-kvadrat.jpg"
+                    alt="Profile photo"
+                    width={180}
+                    height={180}
+                    priority
+                />
             </div>
             <div className="mt-4 text-center">
                 <h2 className="text-lg font-semibold">Åsmund Danielsen Kvitvang</h2>
