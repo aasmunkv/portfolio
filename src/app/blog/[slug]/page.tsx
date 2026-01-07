@@ -27,8 +27,9 @@ export const generateStaticParams = async () => {
     }));
 }
 
-export default function AboutPage(props: any) {
-    const slug = props.params.slug;
+export default async function BlogSlugPage({ params }: { params: Promise<{ slug: string }> }) {
+    const resolvedParams = await params; // <-- unwrap the Promise
+    const slug = resolvedParams.slug;
     const post = getPostContent(slug);
     return (
         <main>

@@ -24,6 +24,7 @@ export default function RootLayout({
                 <div className="flex-grow">
                     <div className='flex items-center justify-center p-4'>
                         {children}
+                        <Analytics />
                     </div>
                 </div>
                 <Footer/>
