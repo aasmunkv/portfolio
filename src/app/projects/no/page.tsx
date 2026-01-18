@@ -3,7 +3,8 @@ import React from "react";
 import getProjectData from "@/components/projects/getProjectData";
 
 export default function ProjectPage() {
-    const projectData = getProjectData();
+    console.log("HCECKKKE hehre ENENNE");
+    const projectData = getProjectData("no");
     const projectPreviews = projectData.map((project) => (
         <ProjectPageComponent key={project.timespan} {...project} />
     ));

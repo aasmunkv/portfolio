@@ -1,7 +1,12 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
+import { useLanguage } from "@/context/LanguageProvider";
 
 export default function AboutPageComponent() {
+    const { t } = useLanguage();
+
     return (
         <div className="flex flex-col">
             <div className="flex flex-col text-center items-center mb-4">
@@ -19,39 +24,24 @@ export default function AboutPageComponent() {
                 </div>
                 <div className="mt-4 text-center">
                     <h2 className="text-lg font-semibold">Åsmund Danielsen Kvitvang</h2>
-                    <div className="text-md text-gray-600 dark:text-white dark:text-slate-400">
-                        <p>Backend developer</p>
+                    <div className="text-md text-gray-600">
+                        <p>{t.common.backendDeveloper}</p>
                         <p>aakvitvang@gmail.com</p>
                     </div>
                 </div>
             </div>
             <div className="items-left text-lg">
                 <p className="font-semibold mb-6">
-                    If you are in need of developer(s) for your project(s), do not hesitate to contact me, either
-                    on <a href={"https://www.linkedin.com/in/%C3%A5smund-danielsen-kvitvang-125012180"} className="hover:underline">
+                    {t.about.contactIntro}{" "}
+                    <a href={"https://www.linkedin.com/in/%C3%A5smund-danielsen-kvitvang-125012180"} className="hover:underline">
                         LinkedIn
-                    </a> or via e-mail, and we will see if it is a match!
+                    </a>{" "}
+                    {t.about.contactOutro}
                 </p>
                 <div className="[&>*]:mb-2">
-                    <p>
-                        I am currently working as a backend developer in a consultant firm called Omegapoint Norway,
-                        located in Oslo, Norway.
-                    </p>
-                    <p>
-                        I have a masters degree in computation science, with high focus on applied mathematics, from the
-                        University of Oslo. The thesis I wrote was about how to approximation solutions to a specific
-                        class of partial differential equations by using machine learning models as a tool.
-                    </p>
-                    <p>
-                        I am fond of collaboration in teams, as well as independent work whenever necessary. The
-                        combination of experiences within applied mathematics and informatics has made me passionate
-                        about robust code with great focus on high efficiency. In my studies, I have become well
-                        acquainted with high-level languages such as Python, C/C++, Java etc. through the development of
-                        machine learning models. Through my work as a backend developer I have acquired a strong
-                        understanding of building databases and APIs, where I have primarily used the languages
-                        Java/Kotlin and Javascript/Typescript, and I have become well acquainted with tools and
-                        frameworks such as NodeJS, NextJS, GraphQL, PostgreSQL, Spring Boot, Knex, Prisma and Swagger.
-                    </p>
+                    <p>{t.about.workDescription}</p>
+                    <p>{t.about.educationDescription}</p>
+                    <p>{t.about.skillsDescription}</p>
                 </div>
             </div>
         </div>

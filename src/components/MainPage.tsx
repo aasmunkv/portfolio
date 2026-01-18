@@ -1,5 +1,8 @@
+"use client";
+
 import Image from 'next/image'
 import React from "react";
+import { useLanguage } from "@/context/LanguageProvider";
 
 /**
  * Outer div:
@@ -12,6 +15,8 @@ import React from "react";
  * @constructor
  */
 export default function MainPage() {
+    const { t } = useLanguage();
+
     return (
         <div className="text-center items-center flex flex-col">
             <div className="relative flex items-center justify-center w-48 h-48 rounded-full border-2 border-green-500 p-0.5">
@@ -27,7 +32,7 @@ export default function MainPage() {
             <div className="mt-4 text-center">
                 <h2 className="text-lg font-semibold">Åsmund Danielsen Kvitvang</h2>
                 <div className="text-md text-gray-600 dark:text-white dark:text-slate-400">
-                    <p>Backend developer</p>
+                    <p>{t.common.backendDeveloper}</p>
                     <p>aakvitvang@gmail.com</p>
                 </div>
                 <a href={"https://www.linkedin.com/in/%C3%A5smund-danielsen-kvitvang-125012180"} target="_blank" rel="noopener noreferrer" className="mt-4 mr-2 inline-block dark:fill-gray-400">

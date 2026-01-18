@@ -1,0 +1,21 @@
+---
+title: "Å skrive dokumentasjon"
+subtitle: "Hvorfor er det slik at så mange utviklere utsetter eller forsømmer å skrive dokumentasjon for systemene sine, når dette er avgjørende viktig for fremtidig vedlikehold?"
+date: "2023-10-19"
+author: "Åsmund Danielsen Kvitvang"
+image: "writing-documentation/writing2.jpg"
+---
+
+Når jeg snakker med medutviklere om viktigheten av å jevnlig skrive og oppdatere dokumentasjon underveis i en utviklingsprosess (og ikke bare i etterkant), er det som regel bred enighet om temaet. Likevel er det oppsiktsvekkende mange som samtidig har et anstrengt forhold til det å faktisk skrive dokumentasjonen selv. Hvorfor? Jeg tror mye av årsaken ligger i at mange programvareutviklere i utgangspunktet ble utviklere av én enkel grunn: å skrive kode og få den til å fungere korrekt.
+
+![Dokumentasjonsskriving](/blog-images/writing-documentation/writing.jpg)
+
+Dokumentasjon for fremtidig vedlikehold og videreutvikling er viktig. Samtidig finnes det en fin balanse mellom dokumentasjon og implementasjon. Dersom man fokuserer for mye på å skrive god dokumentasjon mens man utvikler et nytt system, ender man ofte opp med en ineffektiv prosess. På den andre siden, hvis man er for opptatt av å få systemet ferdig så raskt som mulig, er det svært lett å havne i fellen der man sitter igjen med et udokumentert system, hvor det er vanskelig både for en selv og andre utviklere å fortsette med vedlikehold og videreutvikling på et senere tidspunkt.
+
+Så hvordan skriver man dokumentasjon på best og mest effektiv måte, uten at det ødelegger utviklingsflyten? Min erfaring er at det er nyttig å skrive små biter med dokumentasjon hver gang jeg implementerer ny logikk i systemet mitt. La oss for eksempel si at jeg har skrevet en ny metode i en klasse i en Java-applikasjon. Da legger jeg som regel til en docstring til metoden med en kort forklaring på to setninger som beskriver hovedformålet med funksjonaliteten. Etter dette fortsetter jeg å utvikle andre deler av applikasjonen. Jeg gjør dette i stor grad for min egen del, ettersom jeg sannsynligvis kommer til å lese koden igjen i nær eller fjern fremtid, og da setter jeg stor pris på at mitt yngre jeg tenkte på meg under utviklingsprosessen. Når hele applikasjonen er ferdig, vender jeg tilbake til dokumentasjonen (ofte i form av en *README.md*-fil) og forsøker å skrive et kortfattet og strukturert sammendrag av hele prosjektet, der jeg kan bruke docstringene som støtte.
+
+Et annet nyttig aspekt ved å skrive dokumentasjon underveis (og ikke i etterkant) er at det kan være svært verdifullt å gjøre dette med et friskt *dette-er-nytt-for-meg*-tankesett. Ofte ender jeg opp med å jobbe på prosjekter der jeg må lære minst ett nytt konsept jeg ikke har vært borti tidligere. Da synes jeg det er svært nyttig å skrive litt dokumentasjon samtidig som jeg setter meg inn i temaet. Når man skriver dokumentasjon som nybegynner, er det lett å sette seg i posisjonen til noen som ikke kan stoffet (fordi man faktisk er den personen), og det blir dermed enklere å skrive dokumentasjon på riktig kunnskapsnivå.
+
+Videre består utviklingsprosessen min av enda et nyttig dokumentasjonselement som jeg bruker hyppig fra start til slutt, nemlig en oppgaveliste med en beskrivende forklaring på hva som gjenstår for å ferdigstille prosjektet. Jeg forsøker å holde denne så effektiv som mulig, og den ligger derfor som regel i en *README.md*-fil i rotmappen til prosjektet. Den består av to lister: *TODOs* og *DONEs*. Når jeg får nye tanker om hva applikasjonen trenger for å bli ferdig, legger jeg til et nytt punkt i TODO-listen, og når en oppgave er fullført, flytter jeg den over til DONE-seksjonen. Dette hjelper meg med å jobbe strukturert, samtidig som jeg unngår å glemme viktige deler av utviklingsarbeidet.
+
+Til slutt mener jeg at det finnes én siste type dokumentasjon vi ennå ikke har snakket om. Når jeg har min siste arbeidsdag før ferie, eller noen ganger den siste timen på fredager, synes jeg det er nyttig å skrive ned hvor jeg slapp. Jeg noterer også helt konkret hva jeg bør starte med når jeg er tilbake. Ved å integrere denne rutinen i arbeidshverdagen sparer jeg meg selv for frustrasjonen med å komme i gang igjen etter et avbrekk, hvor jeg ellers ofte kan sitte i en time eller to bare for å finne ut hvor jeg avsluttet arbeidet sist.

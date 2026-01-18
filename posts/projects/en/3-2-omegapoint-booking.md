@@ -1,7 +1,7 @@
 ---
 employer: "Omegapoint Norway"
 division: ""
-timespan: "Apr 2023 Jun 2023"
+timespan: "Apr 2023 Jul 2023"
 title: "Internal booking system"
 role: "Backend developer"
 description: "Collaboration with fellow colleagues to build a web application for booking internal services at 

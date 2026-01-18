@@ -11,7 +11,7 @@ import PostPreview from "@/components/blog/PostPreview";
 
 
 export default function BlogPage() {
-    const postMetadata = getPostMetadata();
+    const postMetadata = getPostMetadata("en");
     const postPreviews = postMetadata.map((post) => (
         <PostPreview key={post.slug} {...post} />
     ));
