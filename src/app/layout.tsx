@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import { Analytics } from "@vercel/analytics/next";
+import { Providers } from "@/context/Providers";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,16 +19,18 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
     return (
-        <html lang="en">
+        <html lang="en" suppressHydrationWarning>
             <body className={`flex flex-col min-h-screen ${inter.className}`}>
-                <Header/>
-                <div className="flex-grow">
-                    <div className='flex items-center justify-center p-4'>
-                        {children}
-                        <Analytics />
+                <Providers>
+                    <Header/>
+                    <div className="flex-grow">
+                        <div className='flex items-center justify-center p-4'>
+                            {children}
+                            <Analytics />
+                        </div>
                     </div>
-                </div>
-                <Footer/>
+                    <Footer/>
+                </Providers>
             </body>
         </html>
   )

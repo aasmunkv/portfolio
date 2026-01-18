@@ -2,9 +2,11 @@ import fs from "fs";
 import matter from "gray-matter";
 import {ProjectData} from "@/components/projects/ProjectData";
 
-const getProjectData = (): ProjectData[] => {
-    const folder = "posts/projects/"
+const getProjectData = (lang: "en" | "no"): ProjectData[] => {
+    const folder = `posts/projects/${lang}/`;
+    console.log("HERE IS folder", folder)
     const files = fs.readdirSync(folder);
+    console.log("HERE IS FILES", files)
     const mdPosts = files.filter((file) => file.endsWith(".md"));
 
     const posts = mdPosts.map((filename) => {

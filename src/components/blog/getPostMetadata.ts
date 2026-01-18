@@ -2,8 +2,8 @@ import {PostMetadata} from "@/components/blog/PostMetadata";
 import fs from "fs";
 import matter from "gray-matter";
 
-const getPostMetadata = (): PostMetadata[] => {
-    const folder = "posts/blog/"
+const getPostMetadata = (lang: "en" | "no"): PostMetadata[] => {
+    const folder = `posts/blog/${lang}/`;
     const files = fs.readdirSync(folder);
     const mdPosts = files.filter((file) => file.endsWith(".md"));
 

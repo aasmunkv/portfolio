@@ -5,7 +5,7 @@ import getPostMetadata from "@/components/blog/getPostMetadata";
 import BackToBlog from "@/components/blog/BackToBlog";
 
 const getPostContent = (slug: string) => {
-    const folder = "posts/blog/";
+    const folder = "posts/blog/en/";
     const file = `${folder}${slug}.md`;
     const content = fs.readFileSync(file, "utf8");
     return matter(content);
@@ -21,7 +21,7 @@ const getPostContent = (slug: string) => {
  * probably more expensive to host on a clouds server service (such as AWS and Vercel).
  */
 export const generateStaticParams = async () => {
-    const posts = getPostMetadata();
+    const posts = getPostMetadata("en");
     return posts.map((post) => ({
         slug: post.slug,
     }));
