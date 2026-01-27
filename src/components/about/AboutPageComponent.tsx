@@ -22,28 +22,42 @@ export default function AboutPageComponent() {
                         />
                     </div>
                 </div>
+
                 <div className="mt-4 text-center">
-                    <h2 className="text-lg font-semibold">Åsmund Danielsen Kvitvang</h2>
-                    <div className="text-md text-gray-600">
+                    <h2 className="text-lg font-semibold text-slate-900 dark:text-white">
+                        Åsmund Danielsen Kvitvang
+                    </h2>
+
+                    {/* <-- Legg til mt-2 her */}
+                    <div className="mt-2 text-md text-gray-600 dark:text-gray-300">
                         <p>{t.common.backendDeveloper}</p>
-                        <p>aakvitvang@gmail.com</p>
+                        <p className="text-gray-700 dark:text-gray-300">aakvitvang@gmail.com</p>
                     </div>
                 </div>
             </div>
-            <div className="items-left text-lg">
-                <p className="font-semibold mb-6">
+
+            <div className="items-left text-md">
+                <p className="font-semibold mb-6 text-slate-900 dark:text-gray-200">
                     {t.about.contactIntro}{" "}
-                    <a href={"https://www.linkedin.com/in/%C3%A5smund-danielsen-kvitvang-125012180"} className="hover:underline">
+                    <a
+                        href={
+                        "https://www.linkedin.com/in/%C3%A5smund-danielsen-kvitvang-125012180"
+                        }
+                        className="hover:underline text-sky-600 dark:text-sky-400"
+                    >
                         LinkedIn
                     </a>{" "}
                     {t.about.contactOutro}
                 </p>
-                <div className="[&>*]:mb-2">
+
+                <div className="[&>*]:mb-2 text-slate-800 dark:text-gray-300">
                     <p>{t.about.workDescription}</p>
                     <p>{t.about.educationDescription}</p>
                     <p>{t.about.skillsDescription}</p>
                 </div>
             </div>
         </div>
+
+
     );
 }

@@ -15,6 +15,7 @@ interface Translations {
         back: string;
         backendDeveloper: string;
         footerText: string;
+        downloadCV: string;
     };
     about: {
         contactIntro: string;
@@ -37,6 +38,7 @@ const translations: Record<Language, Translations> = {
             back: "Back",
             backendDeveloper: "Backend developer",
             footerText: "Developer portfolio by Åsmund Danielsen Kvitvang",
+            downloadCV: "Download CV",
         },
         about: {
             contactIntro: "If you are in need of developer(s) for your project(s), do not hesitate to contact me, either on",
@@ -57,6 +59,7 @@ const translations: Record<Language, Translations> = {
             back: "Tilbake",
             backendDeveloper: "Backend-utvikler",
             footerText: "Utvikler-portefølje av Åsmund Danielsen Kvitvang",
+            downloadCV: "Last ned CV",
         },
         about: {
             contactIntro: "Hvis du trenger en utvikler til ditt prosjekt, ikke nøl med å kontakte meg, enten på",

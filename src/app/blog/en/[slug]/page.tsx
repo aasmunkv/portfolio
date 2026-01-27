@@ -35,21 +35,31 @@ export default async function BlogSlugPage({ params }: { params: Promise<{ slug:
         <main>
             <div className="max-w-2xl w-full">
                 <div className="flex items-start my-4">
-                    <BackToBlog/>
+                    <BackToBlog />
                 </div>
+
                 <div className="flex justify-center min-h-screen">
-                    <article className="prose lg:prose-xl">
-                        <h2 className="dark:text-gray-200">{post.data.title}</h2>
-                        <h4 className="dark:text-gray-300">{post.data.subtitle}</h4>
-                        <h6 className="text-sm dark:text-gray-400">{post.data.author}</h6>
-                        <h6 className="text-sm dark:text-gray-400">{post.data.date}</h6>
-                        <Markdown className="dark:text-gray-300">{post.content}</Markdown>
+                    <article className="prose lg:prose-xl dark:prose-invert">
+                        <h2>{post.data.title}</h2>
+                        <h4>{post.data.subtitle}</h4>
+                        <h6 className="text-sm text-gray-600 dark:text-gray-400">
+                            {post.data.author}
+                        </h6>
+                        <h6 className="text-sm text-gray-600 dark:text-gray-400">
+                            {post.data.date}
+                        </h6>
+
+                        <Markdown className="text-gray-700 dark:text-gray-300">
+                            {post.content}
+                        </Markdown>
                     </article>
                 </div>
+
                 <div className="flex items-start my-4">
-                    <BackToBlog/>
+                    <BackToBlog />
                 </div>
             </div>
         </main>
+
     );
 }

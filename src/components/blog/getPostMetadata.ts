@@ -28,10 +28,6 @@ const getPostMetadata = (lang: "en" | "no"): PostMetadata[] => {
 
     filteredPosts.sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
     return filteredPosts;
-
-
-    // const slugs = mdPosts.map((file) => file.replace(".md", ""));
-    // return slugs;
 }
 
 export default getPostMetadata;

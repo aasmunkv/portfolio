@@ -1,7 +1,6 @@
 import getPostMetadata from "@/components/blog/getPostMetadata";
 import PostPreview from "@/components/blog/PostPreview";
 
-
 export default function BlogPage() {
     const postMetadata = getPostMetadata("no");
     const postPreviews = postMetadata.map((post) => (
@@ -15,5 +14,5 @@ export default function BlogPage() {
                 </ul>
             </div>
         </main>
-);
+    );
 }
